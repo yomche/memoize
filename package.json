@@ -1,0 +1,43 @@
+{
+  "name": "students-practice-memoize",
+  "version": "0.1.0",
+  "author": "Alexander Alexandrov",
+  "description": "Students JavaScript Practice",
+  "keywords": [
+    "JS",
+    "ES2016",
+    "learn",
+    "practice"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redneckz-students-practice/memoize"
+  },
+  "bugs": {
+    "url": "https://github.com/redneckz-students-practice/memoize/issues"
+  },
+  "homepage": "https://github.com/redneckz-students-practice/memoize",
+  "scripts": {
+    "pretest": "npm run eslint",
+    "test": "npm run mocha",
+    "eslint": "eslint src",
+    "mocha": "mocha --watch --require babel-core/register src"
+  },
+  "dependencies": {
+    "babel-runtime": "~6.26.0"
+  },
+  "devDependencies": {
+    "babel-core": "~6.26.0",
+    "babel-eslint": "~8.0.1",
+    "babel-plugin-transform-function-bind": "~6.22.0",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-preset-env": "~1.6.0",
+    "chai": "~4.1.2",
+    "eslint": "~4.8.0",
+    "eslint-config-airbnb-base": "~12.0.1",
+    "eslint-plugin-import": "~2.7.0",
+    "mocha": "~4.0.1",
+    "sinon": "~4.0.0"
+  }
+}

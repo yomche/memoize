@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "ie 11"],
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    ["transform-runtime", {
+      "helpers": true,
+      "polyfill": true,
+      "regenerator": true
+    }],
+    "transform-function-bind"
+  ]
+}
