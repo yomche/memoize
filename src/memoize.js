@@ -4,11 +4,12 @@ export function memoize(inFunc) {
     }
     const cache = new Map();
     return function outFunc(...args) {
-        if (cache.has(args)) {
-            return cache.get(args);
+        const key = JSON.stringify(args);
+        if (cache.has(key)) {
+            return cache.get(key);
         }
         const result = inFunc.apply(this, args);
-        cache.set(args, result);
+        cache.set(key, result);
         return result;
     };
 }
