@@ -3,12 +3,12 @@ export function memoize(inFunc) {
         return null;
     }
     const cache = new Map();
-    return function outFunc(x) {
-        if (cache.has(x)) {
-            return cache.get(x);
+    return function outFunc(...args) {
+        if (cache.has(args)) {
+            return cache.get(args);
         }
-        const result = inFunc.call(this, x);
-        cache.set(x, result);
+        const result = inFunc.apply(this, args);
+        cache.set(args, result);
         return result;
     };
 }
